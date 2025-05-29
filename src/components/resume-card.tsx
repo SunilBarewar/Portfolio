@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import Markdown from "react-markdown";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -18,6 +19,7 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  achievements?: [];
 }
 export const ResumeCard = ({
   logoUrl,
@@ -28,6 +30,7 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  achievements,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -103,6 +106,18 @@ export const ResumeCard = ({
               {description}
             </motion.div>
           )}
+          <div className="flex flex-col gap-3 pt-2">
+            {achievements?.map((text, idx) => (
+              <Markdown
+                className={
+                  "prose max-w-full text-pretty font-sans text-sm dark:prose-invert"
+                }
+                key={idx}
+              >
+                {text}
+              </Markdown>
+            ))}
+          </div>
         </div>
       </Card>
     </Link>
