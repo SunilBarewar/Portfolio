@@ -53,6 +53,12 @@ export const DATA = {
     email: MY_EMAIL,
     tel: "+917030567706",
     social: {
+      Resume: {
+        name: "Resume",
+        url: "https://drive.google.com/file/d/14ztArfEumwtO2xT1YWZk6THIviJvL1u-/view?usp=drive_link",
+        icon: NotebookIcon,
+        navbar: true,
+      },
       GitHub: {
         name: "GitHub",
         url: "https://github.com/SunilBarewar",
@@ -85,7 +91,7 @@ export const DATA = {
         url: MY_EMAIL,
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -136,7 +142,7 @@ export const DATA = {
       href: "https://drive.google.com/file/d/1zoNmPWrEPGh9WM2Zdsrc_o6C85Rk0F_0/view?usp=sharing",
       location: "Remote",
       title: "Software Development Intern",
-      logoUrl: "/cling.jpeg",
+      logoUrl: "/cling.jpg",
       start: "December 2022",
       end: "March 2023",
       description: "",
@@ -158,20 +164,20 @@ export const DATA = {
       end: "Dec 2024",
     },
     {
-      school: "Rashtrasant Tukadoji Maharaj Nagpur University (RTMNU)",
+      school: "Rashtrasant Tukadoji Maharaj Nagpur University",
       href: "https://nagpuruniversity.ac.in/",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
+      degree: "Bachelor of Science in Computer Science",
       logoUrl: "/rtmnu-logo.png",
-      start: "2020",
-      end: "2023",
+      start: "Aug 2020",
+      end: "May 2023",
     },
     {
       school: "Dhote Bandhu Science College, Gondiya",
       href: "https://www.dbscience.org/",
       degree: "Higher Secondary",
-      logoUrl: "/laurier.png",
-      start: "2018",
-      end: "2020",
+      logoUrl: "/db.png",
+      start: "June 2018",
+      end: "Feb 2020",
     },
   ],
   projects: [
@@ -197,6 +203,11 @@ export const DATA = {
           type: "Website",
           href: "https://chatcollect.com",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/SunilBarewar?tab=repositories&q=ecommerce&type=&language=&sort=",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/project_ecom.png",
@@ -243,12 +254,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://movieflix2.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/SunilBarewar/Tvflix",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -261,7 +272,7 @@ export const DATA = {
       dates: "Jan 2023 - Feb 2024",
       active: true,
       description:
-        "PixStock is a Platform to explore and find videos and photos",
+        "PixStock is a Platform to explore and find high quality videos and photos.",
       technologies: ["HTML", "CSS", "JavaScript"],
       links: [
         {

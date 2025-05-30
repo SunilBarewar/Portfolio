@@ -106,7 +106,7 @@ export const ResumeCard = ({
               {description}
             </motion.div>
           )}
-          <div className="flex flex-col gap-3 pt-2">
+          <div className="flex flex-col gap-2.5 pt-2">
             {achievements?.map((text, idx) => (
               <Markdown
                 className={

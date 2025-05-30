@@ -6,6 +6,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { Download } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -29,6 +30,16 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <a
+                  href={DATA.url}
+                  className="flex items-center gap-2 mt-2 w-fit text-sm bg-black text-white px-4 py-1.5 dark:bg-white dark:text-black dark:hover:bg-gray-200 rounded-md  transition-all duration-300 ease-in-out"
+                >
+                  <span>Resume</span>
+                  <Download className="size-4" />
+                </a>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -90,29 +101,6 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="education">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
-          </BlurFade>
-          {DATA.education.map((education, id) => (
-            <BlurFade
-              key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-            >
-              <ResumeCard
-                key={education.school}
-                href={education.href}
-                logoUrl={education.logoUrl}
-                altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
-                period={`${education.start} - ${education.end}`}
-              />
-            </BlurFade>
-          ))}
-        </div>
-      </section>
 
       <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -155,6 +143,29 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="education">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <h2 className="text-xl font-bold">Education</h2>
+          </BlurFade>
+          {DATA.education.map((education, id) => (
+            <BlurFade
+              key={education.school}
+              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+            >
+              <ResumeCard
+                key={education.school}
+                href={education.href}
+                logoUrl={education.logoUrl}
+                altText={education.school}
+                title={education.school}
+                subtitle={education.degree}
+                period={`${education.start} - ${education.end}`}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
 
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
@@ -170,16 +181,25 @@ export default function Page() {
               <div className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 <p>
                   Want to connect? Send me a message on{" "}
-                  <Link
+                  <a
                     href={DATA.contact.social.LinkedIn.url}
-                    className="text-blue-500 hover:underline font-bold"
+                    className="text-blue-500 hover:underline font-medium"
                   >
                     LinkendIn
-                  </Link>{" "}
+                  </a>{" "}
                   and
                 </p>
-                <br />
                 <p>I&apos;ll reply as soon as possible!</p>
+                <p>
+                  You can also email me at{" "}
+                  <a
+                    href={`mailto:${DATA.contact.email}`}
+                    className="text-blue-500 hover:underline font-medium"
+                  >
+                    {DATA.contact.email}
+                  </a>
+                </p>{" "}
+                <p>Looking forward to hearing from you! 😊</p>
               </div>
             </div>
           </BlurFade>
