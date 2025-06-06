@@ -1,14 +1,16 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
-const MY_EMAIL = "dev.sunil7030@gmail.com";
+export const MY_EMAIL = "dev.sunilbarewar@gmail.com";
+export const RESUME_URL =
+  "https://drive.google.com/drive/folders/1jZRLDjkmFVdr57QxmQOYmwOQcM9nP2Qj";
 
 export const DATA = {
   name: "Sunil Barewar",
   initials: "SB",
-  url: "https://drive.google.com/file/d/14ztArfEumwtO2xT1YWZk6THIviJvL1u-/view?usp=drive_link",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  url: RESUME_URL,
+  location: "",
+  locationLink: "",
   description:
     "Software Engineer & Mentor. I love building things and helping people. Very active on LinkedIn.",
   summary:
@@ -55,7 +57,7 @@ export const DATA = {
     social: {
       Resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/14ztArfEumwtO2xT1YWZk6THIviJvL1u-/view?usp=drive_link",
+        url: RESUME_URL,
         icon: NotebookIcon,
         navbar: true,
       },
@@ -63,14 +65,12 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/SunilBarewar",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/sunil-barewar/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       // X: {
@@ -88,9 +88,8 @@ export const DATA = {
       // },
       email: {
         name: "Send Email",
-        url: MY_EMAIL,
+        url: `mailto:${MY_EMAIL}`,
         icon: Icons.email,
-
         navbar: true,
       },
     },
