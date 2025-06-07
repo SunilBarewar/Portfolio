@@ -182,7 +182,7 @@ export const DATA = {
   projects: [
     {
       title: "Exclusive",
-      href: "",
+      href: "https://e-commerce-frontend-iota-nine.vercel.app/",
       dates: "Nov 2023 - Dec 2023",
       active: true,
       description:
@@ -200,7 +200,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://e-commerce-frontend-iota-nine.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
