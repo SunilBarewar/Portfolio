@@ -244,7 +244,7 @@ export const DATA = {
     },
     {
       title: "Movie Flix",
-      href: "https://llm.report",
+      href: "https://movieflix2.netlify.app/",
       dates: "April 2023 - May 2023",
       active: true,
       description:
