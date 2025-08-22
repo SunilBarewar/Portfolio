@@ -113,7 +113,7 @@ export const DATA = {
         "🔹 **Cloud Migration**: Led the migration of all servers from OVH Cloud to Microsoft Azure, enhancing reliability and scalability.",
         "🔹 **Dynamic Layout System**: Designed and implemented a flexible layout system for both web and mobile dashboards, allowing admins to set layout for user based on conditions.",
         "🔹 **Referral System**: Developed both frontend and backend for a comprehensive referral program, increasing referral-based sign-ups by 10% within the first 3 months.",
-        "🔹 **Task Page Redesign**: Revamped the task page UI/UX, reducing page load time by 45% and increasing user retention by 60%.",
+        "🔹 **Task Page Redesign**: Revamped the task page UI/UX, reducing page load time by 45% and increasing user retention by 30%.",
         "🔹 **Dynamic Portfolio Generator**: Developed and deployed a fully customizable portfolio generator on Snapit.tech.",
       ],
     },
