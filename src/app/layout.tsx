@@ -16,10 +16,10 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   icons: {
-    icon: "/portfolio-favicon.png",
+    icon: "/favicon.ico",
   },
   title: {
-    default: DATA.name,
+    default: `${DATA.name} | Full Stack Engineer`,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,

@@ -13,38 +13,52 @@ export const DATA = {
   locationLink: "",
   description:
     "Software Engineer & Mentor. I love building things and helping people. Very active on LinkedIn.",
-  summary:
-    "A Software Engineer with 2.5 years of experience building scalable foundations for high-growth startups. I specialize in turning complex requirements into reliable, and user-friendly products. I am currently the lead architect for my company's internal boilerplate, where I define the technical standards followed by entire engineering team",
+  summary:`
+I'm a full stack engineer who enjoys building **AI-driven products**, **backend systems**, and **scalable infrastructure**.
+
+I work across the entire stack from building user interfaces to designing **backend** services, integrating **LLMs**, deploying applications to the cloud, and improving system **performance**.
+
+I enjoy solving engineering problems, whether it's designing backend systems, optimizing databases, automating deployments, or building reliable software that scales.
+  `,
   avatarUrl: "/profile-photo.jpg",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
-    "Prisma",
-    "PostgreSQL",
-    "AWS (EC2, S3, Lambda, SQS, API Gateway)",
-    "Docker",
-    "MongoDB",
-    "Redis",
-    "JavaScript",
-    "React Router",
-    "TailwindCSS",
-    "Redux",
-    "HTML",
-    "CSS",
-    "GraphQL",
-    "Material UI",
-    "Kafka",
-    "React Native",
-    "Problem Solving",
-    "Googling",
-    "Shadcn UI",
-    "NestJS",
-    "CI/CD (Github Actions)",
-    "Git",
-    "GitHub",
-    "AI Engineering",
+    {
+      title: "Languages",
+      items: ["TypeScript", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      title: "Frontend",
+      items: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "React Router",
+        "Material UI",
+        "Shadcn UI",
+        "React Native",
+      ],
+    },
+    {
+      title: "Backend",
+      items: ["Node.js", "NestJS", "Prisma", "Express.js", "GraphQL", "Kafka"],
+    },
+    {
+      title: "Databases",
+      items: ["PostgreSQL", "MongoDB", "Redis"],
+    },
+    {
+      title: "AWS",
+      items: ["EC2", "S3", "Lambda", "SQS", "API Gateway", "EventBridge"],
+    },
+    {
+      title: "DevOps",
+      items: ["Docker", "CI/CD (GitHub Actions)", "Git", "GitHub", "SST"],
+    },
+    {
+      title: "AI",
+      items: ["RAG", "Agents SDK", "Prompt Engineering", "Langchain"],
+    },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -106,16 +120,16 @@ export const DATA = {
       description:
         "Byldd is a product studio that helps founders build and launch their MVPs. I was responsible for building and maintaining the backend and frontend infrastructure for various startups and the company's internal boilerplate.",
       achievements: [
-        "🔹 **Setting the Standard**: Designed and developed the development of the company-wide **Backend and Frontend Boilerplate**, defining the architectural patterns and best practices adopted across all new client projects and reducing the development time by 15%",
-        "🔹 **Generative AI & RAG**: Engineered an AI chat system featuring **Retrieval-Augmented Generation (RAG)** and real-time streaming, enabling context-aware document interactions with highly responsive performance.",
-        "🔹 **Financial Infrastructure**: Developed end-to-end payment pipelines using **Stripe Connect & Checkout**, automating complex marketplace splits, platform fees, and refund processing.",
-        "🔹 **Real-time Chat & Notifications**: Built a low-latency messaging platform with group chat capabilities and a granular notification engine, increasing system engagement by **30%**.",
-        "🔹 **Referral System**: Designed a scalable referral and rewards system with automated invite loops, driving a **10% increase** in organic user acquisition**.",
-        "🔹 **Cloud Management**: Deployed and managed the servers of the projects on **AWS**, including  ECS, S3, Lambda, EC2",
-        "🔹 **Performance Optimization**: Optimized system throughput by building advanced search and filtering tools, reducing database load and enhancing responsiveness for large-scale datasets.",
-        "🔹 **Authentication System**: Built a robust auth system from scratch, featuring Role-Based Access Control (RBAC), Two-Factor Authentication (2FA) and password rotation to keep user accounts secure and compliant with security standards.",
+        "- Contributed to the **Virtual Concierge** module to coordinate **AI-assisted** end-to-end event planning and booking between hosts and venues via email and in-app messaging",
+        "- Built an AI chat system with **Retrieval-Augmented Generation (RAG)** and real-time streaming, enabling context-aware document interactions with highly responsive performance.",
+        "- Contributed to the inbound email pipeline using **SES, SNS, Lambda** and orchestrated **5+ AI agents** in a structured pipeline to parse, analyze, and respond to venue emails with human escalation when needed",
+        "- Developed end-to-end payment pipelines using **Stripe Connect & Checkout**, automating complex marketplace splits, platform fees, and refund processing.",
+        "- Designed and developed the development of the company-wide **Backend and Frontend Boilerplate**, defining the architectural patterns and best practices adopted across all new client projects and reducing the development time by 15%",
+        "- Designed a scalable referral and rewards system with automated invite loops, driving a **10% increase** in organic user acquisition**.",
+        "- Deployed and managed the servers of the projects on **AWS**, including  ECS, S3, Lambda, EC2",
       ],
     },
+    
     {
       company: "Sharpener Tech",
       href: "https://sharpener.tech",
@@ -128,14 +142,14 @@ export const DATA = {
       description:
         "Sharpener is an Ed-Tech company that provides a platform for students to learn and prepare for software engineering interviews.",
       achievements: [
-        "🔹 **Optimized Database Performance**: Indexed the entire database, reducing API response time by 90% and improving overall system performance and saved $600 per month.",
-        "🔹 **Scalable Event Tracking System**: Designed and implemented a data tracking system using AWS API Gateway, AWS Lambda, and SQS, capable of handling 9,000+ requests per second.",
-        "🔹 **Code Assistant**: Developed an AI-powered Code Assistant feature that helps users understand and resolve issues in their code using Google Gemini and OpenAI.",
-        "🔹 **Cloud Migration**: Led the migration of all servers from OVH Cloud to Microsoft Azure, enhancing reliability and scalability.",
-        "🔹 **Dynamic Layout System**: Designed and implemented a flexible layout system for both web and mobile dashboards, allowing admins to set layout for user based on conditions.",
-        "🔹 **Referral System**: Developed both frontend and backend for a comprehensive referral program, increasing referral-based sign-ups by 10% within the first 3 months.",
-        "🔹 **Task Page Redesign**: Revamped the task page UI/UX, reducing page load time by 45% and increasing user retention by 30%.",
-        "🔹 **Dynamic Portfolio Generator**: Developed and deployed a fully customizable portfolio generator on Snapit.tech.",
+        "- **Indexed** the entire database, reducing API response time by **90%** and improving overall system performance and saved **$600 per month**.",
+        "- Designed and implemented a data tracking system using AWS API Gateway, AWS Lambda, and SQS, capable of handling upto **10,000** requests per second.",
+        "- Developed an **AI-powered Code Assistant** feature that helps users understand and resolve issues in their code using Google Gemini and OpenAI.",
+        "- Revamped the **Task Page UI/UX**, reducing page load time by **45%** and increasing user retention by 10%.",
+        "- Led the migration of all servers from OVH Cloud to Microsoft Azure, enhancing reliability and scalability.",
+        "- Designed and implemented a flexible layout system for both web and mobile dashboards, allowing admins to set layout for user based on conditions.",
+        "- Developed both frontend and backend for a comprehensive referral program, increasing referral-based sign-ups by 5% within the first 3 months.",
+        "- Developed and deployed a fully customizable portfolio generator on Snapit.",
       ],
     },
     {
@@ -149,11 +163,11 @@ export const DATA = {
       end: "July 2024",
       description: "",
       achievements: [
-        "🔹 **Revamped Landing Pages**: Redesigned and developed landing pages for Snapit and Evalit using Next.js and React.js, improving page speed by 40%.",
-        "🔹 **Automated Meeting Scheduling**: Integrated Google Calendar and Google Meet APIs, enabling seamless meeting scheduling automation, reducing manual scheduling time.",
-        "🔹 **Enhanced Mobile UX**: Redesigned the entire mobile dashboard using Tailwind CSS, reducing first contentful paint (FCP) time by 35% and improving mobile user engagement.",
-        "🔹 **Integrated Chat Service**: Implemented Sceyt Chat into the web app, enabling group chats and direct messaging with mentors.",
-        "🔹 **Enhanced Learning Experience**: Refactored the Assignments and Task backend structure, introducing a section-based structure to improve the user learning experience and engagement.",
+        "- Redesigned and developed landing pages for Snapit and Evalit using Next.js and React.js, improving page speed by 40%.",
+        "- Integrated Google Calendar and Google Meet APIs, enabling seamless meeting scheduling automation, reducing manual scheduling time.",
+        "- Redesigned the entire mobile dashboard using Tailwind CSS, reducing first contentful paint (FCP) time by 35% and improving mobile user engagement.",
+        "- Implemented Sceyt Chat into the web app, enabling group chats and direct messaging with mentors.",
+        "- Refactored the Assignments and Task backend structure, introducing a section-based structure to improve the user learning experience and engagement.",
       ],
     },
     {
@@ -167,10 +181,10 @@ export const DATA = {
       end: "March 2023",
       description: "",
       achievements: [
-        "🔹 Worked with MERN stack technologies.",
-        "🔹 Developed REST APIs for backend services.",
-        "🔹 Participated in team meetings and provided status updates on project progress.",
-        "🔹 Developed websites using React.js & Next.js.",
+        "- Worked with MERN stack technologies.",
+        "- Developed REST APIs for backend services.",
+        "- Participated in team meetings and provided status updates on project progress.",
+        "- Developed websites using React.js & Next.js.",
       ],
     },
   ],
@@ -201,38 +215,6 @@ export const DATA = {
     },
   ],
   projects: [
-    {
-      title: "Exclusive",
-      href: "https://e-commerce-frontend-iota-nine.vercel.app/",
-      dates: "Nov 2023 - Dec 2023",
-      active: true,
-      description:
-        "Exclusive is a e-commerce application with the features of a modern online store. It allows users to browse products, add them to their cart, and securely checkout using Stripe. The application is built with a focus on performance and user experience.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "Chakra UI",
-        "Typescript",
-        "MongoDB",
-        "TailwindCSS",
-        "Stripe",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://e-commerce-frontend-iota-nine.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/SunilBarewar?tab=repositories&q=ecommerce&type=&language=&sort=",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/project_ecom.png",
-      video: "",
-    },
     {
       title: "Cook Hub",
       href: "https://cook-io-react.vercel.app/",
@@ -284,6 +266,38 @@ export const DATA = {
         },
       ],
       image: "/project_movieflix.png",
+      video: "",
+    },
+    {
+      title: "Exclusive",
+      href: "https://e-commerce-frontend-iota-nine.vercel.app/",
+      dates: "Nov 2023 - Dec 2023",
+      active: true,
+      description:
+        "Exclusive is a e-commerce application with the features of a modern online store. It allows users to browse products, add them to their cart, and securely checkout using Stripe. The application is built with a focus on performance and user experience.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Chakra UI",
+        "Typescript",
+        "MongoDB",
+        "TailwindCSS",
+        "Stripe",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://e-commerce-frontend-iota-nine.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/SunilBarewar?tab=repositories&q=ecommerce&type=&language=&sort=",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/project_ecom.png",
       video: "",
     },
     {
