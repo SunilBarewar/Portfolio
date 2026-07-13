@@ -114,6 +114,7 @@ I enjoy solving engineering problems, whether it's designing backend systems, op
       href: "https://byldd.com",
       location: "New York, NY (Remote)",
       title: "Full Stack Engineer",
+      badges:[],
       logoUrl: "/byldd-icon.ico",
       start: "August 2025",
       end: "Present",
