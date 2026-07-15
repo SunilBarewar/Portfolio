@@ -62,7 +62,7 @@ I enjoy solving engineering problems, whether it's designing backend systems, op
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: MY_EMAIL,
