@@ -62,7 +62,7 @@ I enjoy solving engineering problems, whether it's designing backend systems, op
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: MY_EMAIL,
@@ -126,7 +126,7 @@ I enjoy solving engineering problems, whether it's designing backend systems, op
         "- Contributed to the inbound email pipeline using **SES, SNS, Lambda** and orchestrated **5+ AI agents** in a structured pipeline to parse, analyze, and respond to venue emails with human escalation when needed",
         "- Developed end-to-end payment pipelines using **Stripe Connect & Checkout**, automating complex marketplace splits, platform fees, and refund processing.",
         "- Designed and developed the development of the company-wide **Backend and Frontend Boilerplate**, defining the architectural patterns and best practices adopted across all new client projects and reducing the development time by 15%",
-        "- Designed a scalable referral and rewards system with automated invite loops, driving a **10% increase** in organic user acquisition**.",
+        "- Designed a scalable referral and rewards system with automated invite loops, driving a **10% increase** in organic user acquisition.",
         "- Deployed and managed the servers of the projects on **AWS**, including  ECS, S3, Lambda, EC2",
       ],
     },
